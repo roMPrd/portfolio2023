@@ -1,13 +1,13 @@
-import HomeStart from '@components/HomeStart'
-import HomePage from '@components/HomePage'
-import Navbar from '@components/Navbar'
-import About from '@components/About'
-import Projects from '@components/Projects'
-import Contact from '@components/Contact'
+import HomeStart from '@components/sections/HomeStart'
+import HomePage from '@components/sections/HomePage'
+import Navbar from '@components/sections/Navbar'
+import About from '@components/sections/About'
+import Projects from '@components/sections/Projects'
+import Contact from '@components/sections/Contact'
 
 const Home = () => {
   return (
-    <div className="bg-black">
+    <div className="flex flex-col items-center justify-center bg-black">
       <Navbar />
       <HomeStart />
       <HomePage />
