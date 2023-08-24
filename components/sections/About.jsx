@@ -1,10 +1,15 @@
 
 const About = () => {
   return (
-    <div>
-      <p className="p-1 text-white font-bold">About</p>
-      <p className="p-1 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusantium vitae accusamus, libero dolorem quidem, autem quisquam, necessitatibus eius similique iusto cupiditate aut. Veniam ratione vitae, maiores amet voluptates officiis?</p>
-      <p className="p-1 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta, explicabo ducimus consectetur ab assumenda optio dicta fugiat voluptates accusamus accusantium vel deleniti eos, error ipsum commodi impedit temporibus eius.</p>
+    <div className="mx-auto mb-10 w-[90%] flex flex-col items-center justify-center">
+      <div className="w-full">
+        <p className="mb-10 font-bold text-white text-left text-[40px] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]">CREATING APPS SINCE 2022</p>
+      </div>
+      <div className="w-full gap-4 mb-10 font-medium text-white text-left leading-relaxed text-[18px] md:text-[20px] lg:mb-16 lg:text-[24px] ">
+        <p className="mb-4">After finishing Le Wagon's bootcamp in 2022, i started developing my own apps.</p>
+        <p className="mb-4">From RubyOnRails to React and Next.js, my passion lies in creating software that is both beautiful and functional.</p>
+        <p className="mb-4">I love experimenting with new technologies and staying up-to-date with the latest trends in the tech world.</p>
+      </div>
     </div>
   )
 }
