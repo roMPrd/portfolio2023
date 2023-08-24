@@ -7,7 +7,7 @@ export const metadata ={
 const Rootlayout = ({children}) => {
   return (
     <html lang="en">
-      <body>
+      <body className='no-scrollbar'>
         <div>
           {children}
         </div>

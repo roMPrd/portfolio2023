@@ -1,7 +1,7 @@
 
 const HomePage = () => {
   return (
-    <div className="h-[100vh] w-[100vw] flex justify-center items-center relative">
+    <div className="h-[100dvh] w-[100%] flex justify-center items-center relative">
       <div className="absolute inset-0">
         <video
           autoplay="autoplay"
