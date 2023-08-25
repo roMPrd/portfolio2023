@@ -1,7 +1,8 @@
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
+      {/* <div className="h-[85dvh]"> */}
       <div>
         <p className="p-1 text-white font-bold">Contact</p>
         <p className="p-1 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusantium vitae accusamus, libero dolorem quidem, autem quisquam, necessitatibus eius similique iusto cupiditate aut. Veniam ratione vitae, maiores amet voluptates officiis?</p>

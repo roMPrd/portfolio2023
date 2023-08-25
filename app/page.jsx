@@ -8,9 +8,9 @@ import Blur from '@components/utilities/Blur'
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-black">
-      <Blur />
+    <div className="pb-[25dvh] flex flex-col items-center justify-center bg-black">
       <Navbar />
+      <Blur />
       <HomeStart />
       <HomePage />
       <About />

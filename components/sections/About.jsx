@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <div className="mx-auto mb-10 h-[100dvh] w-[90%] flex flex-col items-center justify-center">
+    <div id="about" className="mx-auto mb-10 h-[100dvh] w-[90%] flex flex-col items-center justify-center">
       <div className="w-full">
         <p className="mb-10 font-bold text-white text-left text-[40px] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]">CREATING APPS SINCE 2022</p>
       </div>

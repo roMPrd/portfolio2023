@@ -6,7 +6,7 @@ const ProjectGrid = () => {
     <div className="w-[90%] mx-auto flex flex-col">
       {projects.map((project) => (
         <ProjectCard
-          id={project.id}
+          key={project.id}
           name={project.name}
           description={project.description}
           image={project.image}

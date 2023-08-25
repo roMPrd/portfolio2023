@@ -29,7 +29,7 @@ const Blur = () => {
     }, []);
 
     return (
-        <div className={`fixed inset-0 p-1 w-full h-full backdrop-blur-[8px] pointer-events-none z-9 opacity-${scrollOpacity} overlay-mask`} />
+        <div className={`z-10 fixed inset-0 p-1 w-full h-full backdrop-blur-[8px] pointer-events-none opacity-${scrollOpacity} overlay-mask`} />
     );
 };
 

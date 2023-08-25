@@ -7,7 +7,7 @@ export const metadata ={
 }
 const Rootlayout = ({children}) => {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${spaceGrotesk.className} no-scrollbar`}>
         <div>
           {children}
