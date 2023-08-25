@@ -17,7 +17,7 @@ export const projects = [
     stacks: ["NextJS", "TailwindCSS", "ReactJS"],
     github: "",
     website: "",
-    color: "3f3f3f",
+    color: "D2D4D5",
   },
   {
     id: 1,

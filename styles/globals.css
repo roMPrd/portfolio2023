@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #D2D4D5;
+  }
+}
+
 @layer utilities {
   .overlay-mask {
     mask-image: linear-gradient(0deg, rgb(0 0 0 / 100%) 0%, rgb(0 0 0 / 0%) 40%);
