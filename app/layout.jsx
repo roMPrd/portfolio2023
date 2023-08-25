@@ -1,5 +1,5 @@
 import '@styles/globals.css'
-import {Space_Grotesk} from 'next/font/google'
+import {spaceGrotesk} from './fonts/spaceGrotesk'
 
 export const metadata ={
   title: "Portofolio",
@@ -8,10 +8,7 @@ export const metadata ={
 const Rootlayout = ({children}) => {
   return (
     <html lang="en">
-      <head>
-        
-      </head>
-      <body className='no-scrollbar'>
+      <body className={`${spaceGrotesk.className} no-scrollbar`}>
         <div>
           {children}
         </div>
