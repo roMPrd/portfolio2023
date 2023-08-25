@@ -1,9 +1,9 @@
-import HomeStart from '@components/sections/HomeStart'
-import HomePage from '@components/sections/HomePage'
-import Navbar from '@components/sections/Navbar'
-import About from '@components/sections/About'
-import Projects from '@components/sections/Projects'
-import Contact from '@components/sections/Contact'
+import HomeStart from './sections/HomeStart'
+import HomePage from './sections/HomePage'
+import Navbar from './sections/Navbar'
+import About from './sections/About'
+import Projects from './sections/Projects'
+import Contact from './sections/Contact'
 import Blur from '@components/utilities/Blur'
 
 const Home = () => {

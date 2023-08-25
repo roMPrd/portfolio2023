@@ -1,12 +1,15 @@
 import Link from 'next/link';
+import {spaceGrotesk} from '../fonts/spaceGrotesk'
 
 const Contact = () => {
   return (
     // <div id="contact">
     <div id="contact" className="h-[85dvh] w-full flex flex-col justify-center lg:h-[90dvh] xl:justify-start items-center overflow-hidden">
-      <p className="font-bold text-center text-[100px] sm:text-[100px] md:mb-16 md:text-[150px] lg:mb-16 lg:text-[200px] xl:mb-0 xl:text-[450px]">CONTACT</p>
+      <p className={`${spaceGrotesk.className} font-bold text-center text-[100px] sm:text-[100px] md:mb-16 md:text-[150px] lg:mb-16 lg:text-[200px] xl:mb-0 xl:text-[450px]`}>
+        CONTACT
+      </p>
       <div className="flex items-center justify-between w-[80%]">
-        <div className='w-[200px]'>
+        <div className='w-[300px]'>
           <p className="">Got a question, proposal, project, or want to work together on something?</p>
           <Link href="mailto:rom.delimal@gmail.com">
             <p className="underline">Send me an email !</p>

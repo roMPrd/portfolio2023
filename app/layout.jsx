@@ -1,5 +1,12 @@
 import '@styles/globals.css'
-import {spaceGrotesk} from './fonts/spaceGrotesk'
+// import {spaceGrotesk} from './fonts/spaceGrotesk'
+import { Syne } from "next/font/google";
+
+const syne = Syne({
+    subsets: ["latin"],
+    display: "block",
+    weight: ["400", "500", "600", "700", "800"],
+});
 
 export const metadata ={
   title: "Portofolio",
@@ -8,7 +15,7 @@ export const metadata ={
 const Rootlayout = ({children}) => {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${spaceGrotesk.className} no-scrollbar`}>
+      <body className={`${syne.className} no-scrollbar`}>
         <div>
           {children}
         </div>
