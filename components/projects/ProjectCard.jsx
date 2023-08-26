@@ -1,4 +1,5 @@
 import AnimatedTexts from "@components/animations/animatedTexts"
+import AnimatedTitles from "@components/animations/animatedTitles"
 import { SiGithub } from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
 
@@ -35,7 +36,13 @@ const ProjectCard = ({
                     <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
                 </a>
               </div>
-              <p className='mb-5 text-[40px] font-bold'>{name}</p>
+              <AnimatedTitles
+                text={name}
+                className={"mb-5 text-[40px] font-bold"}
+                wordSpace={"mr-[1rem]"}
+                charSpace={"mr-[0.001em]"}
+              />
+              {/* <p className='mb-5 text-[40px] font-bold'>{name}</p> */}
               <AnimatedTexts
                 text={description}
                 className={"mb-5 text-[16px] font-semibold w-[90%]"}
