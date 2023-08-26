@@ -36,7 +36,7 @@ const Contact = () => {
           </Link>
         </div>
         <div className='flex w-[50%] justify-evenly items-center'>
-          <Link href="https://www.linkedin.com/in/romaindelimal/">
+          <Link href="https://www.linkedin.com/in/romain-delimal/" target="_blank">
             <AnimatedTitles
               text={"LINKEDIN"}
               className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"}
@@ -47,7 +47,7 @@ const Contact = () => {
               LINKEDIN
             </p> */}
           </Link>
-          <Link href="github.com/romaindelimal">
+          <Link href="https://github.com/roMPrd" target="_blank">
             <AnimatedTitles
               text={"GITHUB"}
               className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"}

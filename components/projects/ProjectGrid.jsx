@@ -3,10 +3,10 @@ import { projects } from './ProjectDetails'
 
 const ProjectGrid = () => {
   return (
-    <div className="w-[90%] mx-auto flex flex-col">
+    <div className="w-[80%] mx-auto flex flex-col gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
       {projects.map((project) => (
         <ProjectCard
-          key={project.id}
+          id={project.id}
           name={project.name}
           description={project.description}
           image={project.image}
