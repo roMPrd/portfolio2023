@@ -1,3 +1,4 @@
+import AnimatedTexts from "@components/animations/animatedTexts"
 import { SiGithub } from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
 
@@ -35,7 +36,12 @@ const ProjectCard = ({
                 </a>
               </div>
               <p className='mb-5 text-[40px] font-bold'>{name}</p>
-              <p className='mb-5 text-[16px] font-semibold w-[90%]'>{description}</p>
+              <AnimatedTexts
+                text={description}
+                className={"mb-5 text-[16px] font-semibold w-[90%]"}
+                delay={0}
+              />
+              {/* // <p className='mb-5 text-[16px] font-semibold w-[90%]'>{description}</p> */}
               <p className='mb-5'>{stacks}</p>
             </div>
             <div className="w-[50%] p-9 flex flex-col justify-center items-center">
