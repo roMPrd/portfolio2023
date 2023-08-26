@@ -5,18 +5,23 @@ import About from './sections/About'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Blur from '@components/utilities/Blur'
+import PreLoader from './sections/PreLoader'
 
 const Home = () => {
   return (
-    <div className="pb-[25dvh] flex flex-col items-center justify-center bg-black">
-      <Navbar />
+    <>
+      <PreLoader />
+      {/* <HomeStart /> */}
       <Blur />
-      <HomeStart />
-      <HomePage />
-      <About />
-      <Projects />
-      <Contact />
-    </div>
+      <Navbar />
+      <div className="pb-[25dvh] flex flex-col items-center justify-center bg-black">
+        <HomePage />
+        <About />
+        <Projects />
+        {/* <Tools /> // TODO */}
+        <Contact />
+      </div>
+    </>
   )
 }
 
