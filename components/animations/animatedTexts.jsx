@@ -54,7 +54,6 @@ const animatedTexts = (
           aria-label={props.text}
           role="heading"
           className={props.className}
-          ref={ref}
           aria-hidden="true"
           initial="hidden"
           animate={ctrls}
