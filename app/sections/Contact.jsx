@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {spaceGrotesk} from '../fonts/spaceGrotesk'
 import AnimatedTexts from '@components/animations/animatedTexts'
 import AnimatedTitles from '@components/animations/animatedTitles'
+import AnimatedButtons from '@components/animations/animatedButtons'
 import { motion } from 'framer-motion'
 
 const Contact = () => {
@@ -21,7 +22,7 @@ const Contact = () => {
         <div className='w-[300px]'>
           <AnimatedTexts
             text={"Got a question, proposal, project, or want to work together on something?"}
-            className={""}
+            className={"px-1 leading-[2rem] "}
             delay={0}
           />
           {/* <p className="">Got a question, proposal, project, or want to work together on something?</p> */}
@@ -40,12 +41,30 @@ const Contact = () => {
                                       } }}
           >
             <AnimatedTexts
-              text={" Send me an email ! "}
-              className={"underline w-fit hover:no-underline"}
+              text={"Send me an email !"}
+              className={"px-1 underline w-fit hover:no-underline"}
               delay={0}
             />
-            {/* <p className="underline">Send me an email !</p> */}
           </motion.button>
+
+        // stopped working after changing 'button' to 'a' in animatedButtons.jsx
+          {/* <AnimatedButtons
+            url={"mailto:rom.delimal@gmail.com"}
+            target={"_blank"}
+            color={"#D2D4D5"}
+            offset={"0.1rem"}
+            stiffness={1000}
+            mass={1}
+            children={
+              <AnimatedTexts
+                text={"Send me an email !"}
+                className={"underline w-fit hover:no-underline leading-[2rem]"}
+                delay={0}
+              />
+            }
+          /> */}
+        //
+            {/* <p className="underline">Send me an email !</p> */}
         </div>
         <div className='flex w-[50%] justify-evenly items-center'>
           {/* <Link href="https://www.linkedin.com/in/romain-delimal/" target="_blank">
@@ -65,7 +84,7 @@ const Contact = () => {
               charSpace={"mr-[0.001em]"}
             />
           </Link> */}
-          <motion.button href="https://www.linkedin.com/in/romain-delimal/" target="_blank"
+          {/* <motion.button href="https://www.linkedin.com/in/romain-delimal/" target="_blank"
             whileHover={{ outlineColor: '#D2D4D5',
                           outlineStyle: 'solid',
                           outlineOffset: '-0.5rem',
@@ -102,7 +121,43 @@ const Contact = () => {
               wordSpace={""}
               charSpace={"mr-[0.001em]"}
             />
-          </motion.button>
+          </motion.button> */}
+
+
+          <AnimatedButtons
+            url={"https://www.linkedin.com/in/romain-delimal/"}
+            target={"_blank"}
+            color={"#D2D4D5"}
+            offset={"-0.5rem"}
+            stiffness={1000}
+            mass={1}
+            children={
+              <AnimatedTitles
+                text={"LINKEDIN"}
+                className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"}
+                wordSpace={""}
+                charSpace={"mr-[0.001em]"}
+              />
+            }
+          />
+
+          <AnimatedButtons
+            url={"https://github.com/roMPrd"}
+            target={"_blank"}
+            color={"#D2D4D5"}
+            offset={"-0.5rem"}
+            stiffness={1000}
+            mass={1}
+            children={
+              <AnimatedTitles
+                text={"GITHUB"}
+                className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"}
+                wordSpace={""}
+                charSpace={"mr-[0.001em]"}
+              />
+            }
+          />
+
         </div>
       </div>
     </div>
