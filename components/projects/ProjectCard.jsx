@@ -1,6 +1,7 @@
 import AnimatedTexts from "@components/animations/animatedTexts"
 import AnimatedTitles from "@components/animations/animatedTitles"
 import Link from 'next/link';
+import Grain from "@components/utilities/Grain"
 import { SiGithub } from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
 
@@ -66,13 +67,16 @@ const ProjectCard = ({
                 />
                 {/* // <p className='mb-5 text-[16px] font-semibold w-[90%]'>{description}</p> */}
                 <p className='mb-5 mr-4'>{stacks}</p>
-                </div>
               </div>
-                <div className="w-[50%] pr-4 flex flex-col justify-center items-center">
-                  <img className='w-full opacity-50 border-2 rounded-[25px] border-[#ffffff3d]' src={`${image}`}></img>
-                </div>
-          </div>
+            </div>
+            <div className="w-[50%] pr-4 flex flex-col justify-center items-center">
+              <img className='w-full opacity-50 border-2 rounded-[25px] border-[#ffffff3d]' src={`${image}`}></img>
+            </div>
+        </div>
         <div className="z-10 absolute inset-0 w-full h-full pointer-events-none bg-gradient-to-t from-black to-transparent to-20%"/>
+        <div className="grain">
+          <Grain baseFrequency={"9"} numOctaves={5} w={"100%"} h={"100%"}/>
+        </div>
         {/* { id % 2 === 0 ? (
           <div className="z-10 absolute inset-0 w-full h-full pointer-events-none bg-gradient-to-tl from-black from-10% via-transparent"/>
          ) : (

@@ -9,7 +9,7 @@ const Contact = () => {
     <div id="contact" className="h-[85dvh] w-full flex flex-col justify-center lg:h-[90dvh] xl:justify-start items-center overflow-hidden">
       <AnimatedTexts
         text={"CONTACT"}
-        className={`${spaceGrotesk.className} font-bold text-center text-[100px] sm:text-[100px] md:mb-16 md:text-[150px] lg:mb-16 lg:text-[200px] xl:mb-0 xl:text-[450px]`}
+        className={`${spaceGrotesk.className} font-bold text-center text-[100px] sm:text-[100px] md:text-[150px] lg:mb-16 lg:text-[200px] xl:mb-0 xl:text-[450px]`}
         delay={0}
       />
       {/* <p className={`${spaceGrotesk.className} font-bold text-center text-[100px] sm:text-[100px] md:mb-16 md:text-[150px] lg:mb-16 lg:text-[200px] xl:mb-0 xl:text-[450px]`}>
