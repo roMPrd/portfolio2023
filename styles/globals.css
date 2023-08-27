@@ -11,6 +11,14 @@
   section {
     color: #D2D4D5;
   }
+
+  .boxShadowTR {
+    box-shadow: 7px -7px 20px 5px rgba(0,0,0,0.5);
+  }
+
+  .boShadowTL {
+    box-shadow: -7px -7px 20px 5px rgba(0,0,0,0.5);
+  }
 }
 
 @layer utilities {
