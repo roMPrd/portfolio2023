@@ -65,7 +65,7 @@ const ProjectCard = ({
                   delay={0}
                 />
                 {/* // <p className='mb-5 text-[16px] font-semibold w-[90%]'>{description}</p> */}
-                <p className='mb-5'>{stacks}</p>
+                <p className='mb-5 mr-4'>{stacks}</p>
                 </div>
               </div>
                 <div className="w-[50%] pr-4 flex flex-col justify-center items-center">
