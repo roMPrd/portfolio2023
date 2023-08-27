@@ -1,7 +1,9 @@
+"use client"
 import Link from 'next/link';
 import {spaceGrotesk} from '../fonts/spaceGrotesk'
 import AnimatedTexts from '@components/animations/animatedTexts'
 import AnimatedTitles from '@components/animations/animatedTitles'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
   return (
@@ -23,41 +25,84 @@ const Contact = () => {
             delay={0}
           />
           {/* <p className="">Got a question, proposal, project, or want to work together on something?</p> */}
-          <Link
+          <motion.button
             href="mailto:rom.delimal@gmail.com"
             target="_blank"
+            whileHover={{ outlineColor: '#D2D4D5',
+                          outlineStyle: 'solid',
+                          outlineOffset: '0.1rem',
+                          outlineWidth: '1px',
+                          transition: { type: 'spring',
+                                        stiffness: 1000,
+                                        // velocity: 10,
+                                        mass: 1,
+                                        // bounce: 1
+                                      } }}
           >
             <AnimatedTexts
-              text={"Send me an email !"}
-              className={"underline"}
+              text={" Send me an email ! "}
+              className={"underline w-fit hover:no-underline"}
               delay={0}
             />
             {/* <p className="underline">Send me an email !</p> */}
-          </Link>
+          </motion.button>
         </div>
         <div className='flex w-[50%] justify-evenly items-center'>
-          <Link href="https://www.linkedin.com/in/romain-delimal/" target="_blank">
+          {/* <Link href="https://www.linkedin.com/in/romain-delimal/" target="_blank">
             <AnimatedTitles
               text={"LINKEDIN"}
-              className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"}
-              wordSpace={"mr-[1rem]"}
+              className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px] border-[1px] border-transparent hover:border-[#D2D4D5]"}
+              wordSpace={""}
               charSpace={"mr-[0.001em]"}
             />
-            {/* <p className="p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]">
-              LINKEDIN
-            </p> */}
+
           </Link>
           <Link href="https://github.com/roMPrd" target="_blank">
             <AnimatedTitles
               text={"GITHUB"}
-              className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"}
-              wordSpace={"mr-[1rem]"}
+              className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px] border-[1px] border-transparent hover:border-[#D2D4D5]"}
+              wordSpace={""}
               charSpace={"mr-[0.001em]"}
             />
-            {/* <p className="p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]">
-              GITHUB
-            </p> */}
-          </Link>
+          </Link> */}
+          <motion.button href="https://www.linkedin.com/in/romain-delimal/" target="_blank"
+            whileHover={{ outlineColor: '#D2D4D5',
+                          outlineStyle: 'solid',
+                          outlineOffset: '-0.5rem',
+                          outlineWidth: '1px',
+                          transition: { type: 'spring',
+                                        stiffness: 1000,
+                                        // velocity: 10,
+                                        mass: 1,
+                                        // bounce: 1
+                                      } }}
+          >
+            <AnimatedTitles
+              text={"LINKEDIN"}
+              className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"}
+              wordSpace={""}
+              charSpace={"mr-[0.001em]"}
+            />
+          </motion.button>
+          <motion.button href="https://github.com/roMPrd" target="_blank"
+            whileHover={{ outlineColor: '#D2D4D5',
+                          outlineStyle: 'solid',
+                          outlineOffset: '-0.5rem',
+                          outlineWidth: '1px',
+                          transition: { type: 'spring',
+                                        stiffness: 1000,
+                                        // velocity: 10,
+                                        mass: 1,
+                                        // bounce: 1
+                                      } }}
+          >
+            <AnimatedTitles
+              text={"GITHUB"}
+              className={"p-4 text-[16px] font-bold text-[#e4ded7] sm:text-[20px] md:text-[16px] lg:text-[28px]"}
+              wordSpace={""}
+              charSpace={"mr-[0.001em]"}
+            />
+          </motion.button>
         </div>
       </div>
     </div>

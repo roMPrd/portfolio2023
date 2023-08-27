@@ -30,7 +30,7 @@ const ProjectCard = ({
                     href={`${github}`}
                     target="_blank"
                     aria-label="Open GitHub Repository"
-                    className={`h-[70px] w-[70px] mx-4 text-black bg-[#D2D4D5] border-10 border-[#ffffff3d] rounded-full flex justify-center items-center text-center
+                    className={`h-[70px] w-[70px] mx-4 text-black bg-[#D2D4D5] border-10 border-[#ffffff3d] rounded-full flex justify-center items-center text-center border-[1px] hover:outline hover:outline-offset-4 outline-[#D2D4D5] outline-1
                     ${id % 2 === 0 ? '' : ''}`}>
                       <i><SiGithub className="h-[35px] w-[35px]" /></i>
                   </Link>
@@ -44,7 +44,7 @@ const ProjectCard = ({
                     href={`${website}`}
                     target="_blank"
                     aria-label="Open Web Page"
-                    className={`h-[70px] w-[70px] mx-4 text-black bg-[#D2D4D5] border-10 border-[#ffffff4d] rounded-full flex justify-center items-center text-center
+                    className={`h-[70px] w-[70px] mx-4 text-black bg-[#D2D4D5] border-10 border-[#ffffff4d] rounded-full flex justify-center items-center text-center border-[1px] hover:outline hover:outline-offset-4 outline-[#D2D4D5] outline-1
                     ${id % 2 === 0 ? '' : ''}`}>
                       <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
                   </Link>

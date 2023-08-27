@@ -12,13 +12,17 @@
     color: #D2D4D5;
   }
 
-  .boxShadowTR {
+  .shadowTL {
+    box-shadow: -7px -7px 20px 5px rgba(0,0,0,0.5);
+  }
+  .shadowTR {
     box-shadow: 7px -7px 20px 5px rgba(0,0,0,0.5);
   }
 
-  .boShadowTL {
-    box-shadow: -7px -7px 20px 5px rgba(0,0,0,0.5);
+  .customOutline {
+    outline-offset: 2px;
   }
+
 }
 
 @layer utilities {
