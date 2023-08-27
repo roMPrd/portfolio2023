@@ -33,7 +33,7 @@ export const projects = [
     id: 0,
     name: "Code Hunter",
     description: "School project: a platform to post code problem and be paid when solving it with crypto money via MetaMask",
-    image: "assets/images/codehunter.gif",
+    image: "codehunter.gif",
     stacks: ["Ruby", "Rails", "SCSS", "JS", "PostgreSQL"],
     github: "https://github.com/roMPrd/RubyHunters",
     website: "",
