@@ -5,7 +5,7 @@ import AnimatedButtons from '@components/animations/animatedButtons'
 
 const Navbar = () => {
   return (
-    <div className="z-50 flex justify-center items-center fixed inset-x-0 bottom-0 w-[350px] md:w-[420px] mx-auto mb-5 rounded-lg bg-gradient-to-b from-[#D2D4D54d] via-transparent bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-[#D2D4D5]">
+    <div className="z-50 flex justify-center items-center fixed inset-x-0 bottom-0 w-fit mx-auto mb-5 rounded-lg bg-gradient-to-b from-[#D2D4D54d] via-transparent bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-[#D2D4D5]">
       <AnimatedButtons
         url={"#home"}
         target={""}
