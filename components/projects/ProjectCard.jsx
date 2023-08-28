@@ -18,9 +18,9 @@ const ProjectCard = ({
   }) => {
     return (
       // console.log(id),
-      <div className="relative h-[550px] mb-4 overflow-hidden">
+      <div className="relative h-[550px] mb-4 rounded-[25px] overflow-hidden">
         <div style={{ background: "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)" }}
-          className={`relative flex w-full h-full border-2 rounded-[25px] border-[#ffffff3d]
+          className={`overflow-hidden relative flex w-full h-full border-2 rounded-[25px] border-[#ffffff3d]
             ${id % 2 === 0 ? 'justify-start' : 'justify-end text-right'}`}>
             <div className=" p-6 flex flex-col mt-4">
               <div className={`flex items-center
