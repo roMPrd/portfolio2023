@@ -58,7 +58,7 @@ const Contact = () => {
             children={
               <AnimatedTexts
                 text={"Send me an email !"}
-                className={"underline w-fit hover:no-underline leading-[2rem]"}
+                className={"mx-1 underline w-fit hover:no-underline"}
                 delay={0}
               />
             }
@@ -125,7 +125,7 @@ const Contact = () => {
 
 
           <AnimatedButtons
-            url={"https://www.linkedin.com/in/romain-delimal/"}
+            href={"https://www.linkedin.com/in/romain-delimal/"}
             target={"_blank"}
             color={"#D2D4D5"}
             offset={"-0.5rem"}
@@ -142,7 +142,7 @@ const Contact = () => {
           />
 
           <AnimatedButtons
-            url={"https://github.com/roMPrd"}
+            href={"https://github.com/roMPrd"}
             target={"_blank"}
             color={"#D2D4D5"}
             offset={"-0.5rem"}

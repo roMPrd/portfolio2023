@@ -5,7 +5,7 @@ const AnimatedButtons = (
   props
 ) => {
   return (
-    <motion.a href={props.url} target={props.target}
+    <motion.a href={props.href} target={props.target} className={props.className}
       whileHover={{ outlineColor: `${props.color}`,
                     outlineStyle: 'solid',
                     outlineOffset: `${props.offset}`,

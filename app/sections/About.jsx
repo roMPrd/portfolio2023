@@ -32,7 +32,7 @@ const About = () => {
       <div className="w-full">
         <AnimatedTitles
           text={"CREATING APPS SINCE 2022"}
-          className={"mb-10 font-bold text-left leading-none tracking-tighter text-[40px] sm:text-[45px] md:mb-8 md:text-[60px] lg:text-[80px]"}
+          className={"mb-10 font-bold text-left leading-none tracking-tighter text-[40px] sm:text-[45px] md:mb-8 md:text-[60px] lg:text-[80px] lg:mb-16"}
           wordSpace={"mr-[1rem]"}
           charSpace={"mr-[0.001em]"}
         />

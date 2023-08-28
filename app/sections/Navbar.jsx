@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="z-50 flex justify-center items-center fixed inset-x-0 bottom-0 w-fit mx-auto mb-5 rounded-lg bg-gradient-to-b from-[#D2D4D54d] via-transparent bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-[#D2D4D5]">
       <AnimatedButtons
-        url={"#home"}
+        href={"#home"}
         target={""}
         color={"#D2D4D5"}
         offset={"-0.3rem"}
@@ -18,7 +18,7 @@ const Navbar = () => {
         }
         />
       <AnimatedButtons
-        url={"#about"}
+        href={"#about"}
         target={""}
         color={"#D2D4D5"}
         offset={"-0.3rem"}
@@ -29,7 +29,7 @@ const Navbar = () => {
         }
         />
       <AnimatedButtons
-        url={"#projects"}
+        href={"#projects"}
         target={""}
         color={"#D2D4D5"}
         offset={"-0.3rem"}
@@ -40,7 +40,7 @@ const Navbar = () => {
         }
         />
       <AnimatedButtons
-        url={"#contact"}
+        href={"#contact"}
         target={""}
         color={"#D2D4D5"}
         offset={"-0.3rem"}

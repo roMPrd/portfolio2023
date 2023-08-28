@@ -1,5 +1,6 @@
 import AnimatedTexts from "@components/animations/animatedTexts"
 import AnimatedTitles from "@components/animations/animatedTitles"
+import AnimatedButtons from "@components/animations/animatedButtons"
 import Link from 'next/link';
 import Grain from "@components/utilities/Grain"
 import { SiGithub } from "react-icons/si";
@@ -25,29 +26,57 @@ const ProjectCard = ({
               <div className={`flex items-center
                 ${id % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
               {github ? (
-                  <Link
-                    rel="stylesheet"
-                    href={`${github}`}
-                    target="_blank"
-                    aria-label="Open GitHub Repository"
-                    className={`h-[70px] w-[70px] mx-4 text-black bg-[#D2D4D5] border-10 border-[#ffffff3d] rounded-full flex justify-center items-center text-center border-[1px] hover:outline hover:outline-offset-4 outline-[#D2D4D5] outline-1
-                    ${id % 2 === 0 ? '' : ''}`}>
-                      <i><SiGithub className="h-[35px] w-[35px]" /></i>
-                  </Link>
+                <AnimatedButtons
+                  aria-label="Open GitHub Repository"
+                  className="mx-4 mb-4 rounded-full flex justify-center items-center text-center"
+                  rel="stylesheet"
+                  href={`${github}`}
+                  target="_blank"
+                  color={"#D2D4D5"}
+                  offset={"0.5rem"}
+                  stiffness={1000}
+                  mass={1}
+                  children={
+                    <i><SiGithub className="h-[35px] w-[35px]" /></i>
+                  }
+                />
+                  // <Link
+                  //   rel="stylesheet"
+                  //   href={`${github}`}
+                  //   target="_blank"
+                  //   aria-label="Open GitHub Repository"
+                  //   className={`mx-4 mb-2 rounded-full flex justify-center items-center text-center
+                  //   ${id % 2 === 0 ? '' : ''}`}>
+                  //     <i><SiGithub className="h-[35px] w-[35px]" /></i>
+                  // </Link>
                 ) : (
                   <div></div>
                 )
               }
               {website ? (
-                  <Link
+                  <AnimatedButtons
+                    aria-label="Open Web Page"
+                    className="mx-4 mb-4 rounded-full flex justify-center items-center text-center"
                     rel="stylesheet"
                     href={`${website}`}
                     target="_blank"
-                    aria-label="Open Web Page"
-                    className={`h-[70px] w-[70px] mx-4 text-black bg-[#D2D4D5] border-10 border-[#ffffff4d] rounded-full flex justify-center items-center text-center border-[1px] hover:outline hover:outline-offset-4 outline-[#D2D4D5] outline-1
-                    ${id % 2 === 0 ? '' : ''}`}>
+                    color={"#D2D4D5"}
+                    offset={"0.5rem"}
+                    stiffness={1000}
+                    mass={1}
+                    children={
                       <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
-                  </Link>
+                    }
+                  />
+                  // <Link
+                  //   rel="stylesheet"
+                  //   href={`${website}`}
+                  //   target="_blank"
+                  //   aria-label="Open Web Page"
+                  //   className={`mx-4 mb-2 rounded-full flex justify-center items-center text-center
+                  //   ${id % 2 === 0 ? '' : ''}`}>
+                  //     <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
+                  // </Link>
                 ) :(
                   <div></div>
                 )
@@ -57,7 +86,7 @@ const ProjectCard = ({
 
                 <AnimatedTitles
                   text={name}
-                  className={`mb-5 text-[40px] font-bold ${id % 2 === 0 ? 'mx-4' : ''}`}
+                  className={`mb-2 leading-none text-[40px] font-bold ${id % 2 === 0 ? 'mx-4' : ''}`}
                   wordSpace={"mr-[1rem]"}
                   charSpace={"mr-[0.001em]"
                 }
@@ -65,11 +94,11 @@ const ProjectCard = ({
                 {/* <p className='mb-5 text-[40px] font-bold'>{name}</p> */}
                 <AnimatedTexts
                   text={description}
-                  className={"mb-5 mx-4 text-[16px] font-semibold"}
+                  className={"mb-4 mx-4 text-[16px] font-semibold"}
                   delay={0}
                 />
                 {/* // <p className='mb-5 text-[16px] font-semibold w-[90%]'>{description}</p> */}
-                <p className='mb-5 mx-4'>{stacks}</p>
+                <p className='mb-2 mx-4'>{stacks}</p>
               </div>
             </div>
             {/* <div className="w-[50%] pr-4 flex flex-col justify-center items-center">
