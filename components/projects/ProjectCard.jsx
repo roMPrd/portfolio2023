@@ -117,7 +117,7 @@ const ProjectCard = ({
           />
         </div>
         {/* <div className="z-10 absolute inset-0 w-full h-full pointer-events-none bg-gradient-to-t from-black to-transparent to-20%"/> */}
-        <div className="grain">
+        <div className="grain rounded-[25px]">
           <Grain baseFrequency={"9"} numOctaves={5} w={"100%"} h={"100%"}/>
         </div>
         {/* { id % 2 === 0 ? (
