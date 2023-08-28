@@ -6,12 +6,30 @@ import Grain from "@components/utilities/Grain"
 import { SiGithub } from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
 
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiFramer,
+  SiRubyOnRails,
+  SiBootstrap,
+  SiScss,
+  SiJavascript,
+  SiPostgresql,
+  SiNodedotjs,
+  SiPuppeteer,
+} from "react-icons/si";
+import {IconType} from "react-icons";
+
+// const stackIcon = IconType[];
+
 const ProjectCard = ({
     id,
     name,
     description,
     image,
-    stacks,
+    stackIcon,
+    stackName,
     github,
     website,
     color,
@@ -98,7 +116,15 @@ const ProjectCard = ({
                   delay={0}
                 />
                 {/* // <p className='mb-5 text-[16px] font-semibold w-[90%]'>{description}</p> */}
-                <p className='mb-2 mx-4'>{stacks}</p>
+                {/* <p className='mb-2 mx-4'>{stacks}</p> */}
+                <div className="relative flex gap-4 mx-4">
+                  {stackIcon.map((Icon, index) => (
+                    <div>
+                      <i><Icon tooltip={stackName[index]} className="text-white h-[25px] w-[25px]" /></i>
+                      <p>{stackName[index]}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
             {/* <div className="w-[50%] pr-4 flex flex-col justify-center items-center">

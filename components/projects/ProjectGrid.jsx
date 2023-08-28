@@ -15,10 +15,12 @@ const ProjectGrid = () => {
       {projects.map((project) => (
         <ProjectCard
           id={project.id}
+          key={project.id}
           name={project.name}
           description={project.description}
           image={project.image}
-          stacks={project.stacks}
+          stackIcon={project.stackIcon}
+          stackName={project.stackName}
           github={project.github}
           website={project.website}
           color={project.color}
