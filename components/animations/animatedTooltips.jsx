@@ -11,13 +11,13 @@ const AnimatedTooltips = (
         x: "-50%",
         y: 0,
         opacity: 1,
-        transition: { type: 'spring',
-                      stiffness: "1000",
-                      // velocity: 10,
-                      mass: "1",
-                      // bounce: 1
-                    }
-        // },
+        transition: {
+          type: 'spring',
+          stiffness: "1000",
+          // velocity: 10,
+          mass: "1",
+          // bounce: 1
+        }
       },
       initial: {
         x: "-50%",

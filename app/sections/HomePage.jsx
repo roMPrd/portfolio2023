@@ -1,3 +1,4 @@
+import AnimatedLogo from "@components/animations/animatedLogo"
 
 const HomePage = () => {
   return (
@@ -12,8 +13,18 @@ const HomePage = () => {
         </video>
         <div className="z-5 absolute inset-0 w-full h-full bg-gradient-to-t from-black via-transparent"/>
       </div>
-      <img src="Logo_RP_transparent.png" alt="logo" className="z-10 h-20 absolute" />
-    </div>
+      <AnimatedLogo
+        className={"z-10 h-20 absolute"}
+        src={"Logo_RP_transparent.png"}
+        alt={"logo"}
+      />
+      {/* <AnimatedLogo
+        className={"z-10 h-20 absolute"}
+        children={
+          <img src="Logo_RP_transparent.png" alt="logo" className="z-10 h-20 absolute" />
+        }
+      /> */}
+      </div>
   )
 }
 
