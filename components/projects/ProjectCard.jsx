@@ -1,6 +1,7 @@
 import AnimatedTexts from "@components/animations/animatedTexts"
 import AnimatedTitles from "@components/animations/animatedTitles"
 import AnimatedButtons from "@components/animations/animatedButtons"
+import AnimatedTooltips from "@components/animations/animatedTooltips"
 import Link from 'next/link';
 import Grain from "@components/utilities/Grain"
 import { SiGithub } from "react-icons/si";
@@ -119,9 +120,18 @@ const ProjectCard = ({
                 {/* <p className='mb-2 mx-4'>{stacks}</p> */}
                 <div className="relative flex gap-4 mx-4">
                   {stackIcon.map((Icon, index) => (
-                    <div>
-                      <i><Icon tooltip={stackName[index]} className="text-white h-[25px] w-[25px]" /></i>
-                      <p>{stackName[index]}</p>
+                    <div className="relative">
+                      {/* <i><Icon tooltip={stackName[index]} className="text-white h-[25px] w-[25px]" /></i> */}
+                      {/* <p>{stackName[index]}</p> */}
+
+                      <AnimatedTooltips
+                        // icon={Icon}
+                        children={<Icon className="text-white h-[35px] w-[35px]"/>}
+                        divclassName={"h-[35px] w-[35px] relative"}
+                        tooltipClassName={"absolute bottom-[-2rem] left-[50%] text-[12px] font-semibold text-white"}
+                        stackName={stackName[index]}
+
+                      />
                     </div>
                   ))}
                 </div>
