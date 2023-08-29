@@ -19,7 +19,7 @@ const Contact = () => {
         CONTACT
       </p> */}
       <div className=" text-center sm:text-left flex flex-col sm:flex-row items-center justify-between sm:w-[80%]">
-        <div className='w-[300px] flex flex-col items-center sm:items-start'>
+        <div className='max-w-[300px] flex flex-col items-center sm:items-start'>
           <AnimatedTexts
             text={"Got a question, proposal, project, or want to work together on something?"}
             className={"px-1 leading-[2rem] "}
