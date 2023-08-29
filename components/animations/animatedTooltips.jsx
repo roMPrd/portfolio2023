@@ -1,29 +1,30 @@
 "use client"
 import { motion } from "framer-motion"
 
-const variants = {
-  hover: {
-    x: "-50%",
-    y: 0,
-    opacity: 1,
-    transition: { type: 'spring',
-                  stiffness: "1000",
-                  // velocity: 10,
-                  mass: "1",
-                  // bounce: 1
-                }
-    // },
-  },
-  initial: {
-    x: "-50%",
-    y: 10,
-    opacity: 0,
-  }
-};
 
 const AnimatedTooltips = (
-    props
+  props
   ) => {
+
+    const variants = {
+      hover: {
+        x: "-50%",
+        y: 0,
+        opacity: 1,
+        transition: { type: 'spring',
+                      stiffness: "1000",
+                      // velocity: 10,
+                      mass: "1",
+                      // bounce: 1
+                    }
+        // },
+      },
+      initial: {
+        x: "-50%",
+        y: props.y,
+        opacity: 0,
+      }
+    };
 
   return (
 

@@ -46,20 +46,41 @@ const ProjectCard = ({
               <div className={`flex items-center
                 ${id % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
               {github ? (
-                <AnimatedButtons
-                  aria-label="Open GitHub Repository"
-                  className="mx-4 mb-4 rounded-full flex justify-center items-center text-center"
-                  rel="stylesheet"
-                  href={`${github}`}
-                  target="_blank"
-                  color={"#D2D4D5"}
-                  offset={"0.5rem"}
-                  stiffness={1000}
-                  mass={1}
-                  children={
-                    <i><SiGithub className="h-[35px] w-[35px]" /></i>
-                  }
-                />
+                <div className="relative">
+                  <AnimatedTooltips
+                    // icon={Icon}
+                    children={
+                      <AnimatedIcons
+                        key={""}
+                        x={"0"}
+                        y={20}
+                        iconClassName={""}
+                        delay={""}
+                        children={
+                          <AnimatedButtons
+                            aria-label="Open GitHub Repository"
+                            className="mx-4 mb-4 rounded-full flex justify-center items-center text-center"
+                            rel="stylesheet"
+                            href={`${github}`}
+                            target="_blank"
+                            color={"#D2D4D5"}
+                            offset={"0.5rem"}
+                            stiffness={1000}
+                            mass={1}
+                            children={
+                              <i><SiGithub className="h-[35px] w-[35px]" /></i>
+                            }
+                          />
+                        }
+                      />
+                    }
+                    y={20}
+                    divclassName={"h-[30px] w-[30px] relative"}
+                    tooltipClassName={"absolute top-[-2rem] left-[50%] text-[12px] font-semibold text-white"}
+                    stackName={"Github"}
+                  />
+                </div>
+
                   // <Link
                   //   rel="stylesheet"
                   //   href={`${github}`}
@@ -74,20 +95,54 @@ const ProjectCard = ({
                 )
               }
               {website ? (
-                  <AnimatedButtons
-                    aria-label="Open Web Page"
-                    className="mx-4 mb-4 rounded-full flex justify-center items-center text-center"
-                    rel="stylesheet"
-                    href={`${website}`}
-                    target="_blank"
-                    color={"#D2D4D5"}
-                    offset={"0.5rem"}
-                    stiffness={1000}
-                    mass={1}
-                    children={
-                      <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
-                    }
-                  />
+                <div className="relative">
+                <AnimatedTooltips
+                  // icon={Icon}
+                  children={
+                    <AnimatedIcons
+                      key={""}
+                      x={"0"}
+                      y={20}
+                      iconClassName={""}
+                      delay={""}
+                      children={
+                        <AnimatedButtons
+                          aria-label="Open Web Page"
+                          className="mx-4 mb-4 rounded-full flex justify-center items-center text-center"
+                          rel="stylesheet"
+                          href={`${github}`}
+                          target="_blank"
+                          color={"#D2D4D5"}
+                          offset={"0.5rem"}
+                          stiffness={1000}
+                          mass={1}
+                          children={
+                            <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
+                          }
+                        />
+                      }
+                    />
+                  }
+                  y={20}
+                  divclassName={"h-[30px] w-[30px] relative"}
+                  tooltipClassName={"absolute top-[-2rem] left-[50%] text-[12px] font-semibold text-white"}
+                  stackName={"Website"}
+                />
+                </div>
+                  // <AnimatedButtons
+                  //   aria-label="Open Web Page"
+                  //   className="mx-4 mb-4 rounded-full flex justify-center items-center text-center"
+                  //   rel="stylesheet"
+                  //   href={`${website}`}
+                  //   target="_blank"
+                  //   color={"#D2D4D5"}
+                  //   offset={"0.5rem"}
+                  //   stiffness={1000}
+                  //   mass={1}
+                  //   children={
+                  //     <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
+                  //   }
+                  // />
                   // <Link
                   //   rel="stylesheet"
                   //   href={`${website}`}
@@ -140,6 +195,7 @@ const ProjectCard = ({
                             }
                           />
                         }
+                        y={20}
                         divclassName={"h-[30px] w-[30px] relative"}
                         tooltipClassName={"absolute bottom-[-2rem] left-[50%] text-[12px] font-semibold text-white"}
                         stackName={stackName[index]}
