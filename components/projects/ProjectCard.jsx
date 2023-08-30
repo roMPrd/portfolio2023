@@ -8,23 +8,6 @@ import Grain from "@components/utilities/Grain"
 import { SiGithub } from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
 
-import {
-  SiReact,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiFramer,
-  SiRubyOnRails,
-  SiBootstrap,
-  SiScss,
-  SiJavascript,
-  SiPostgresql,
-  SiNodedotjs,
-  SiPuppeteer,
-} from "react-icons/si";
-import {IconType} from "react-icons";
-
-// const stackIcon = IconType[];
-
 const ProjectCard = ({
     id,
     name,
@@ -80,16 +63,6 @@ const ProjectCard = ({
                     stackName={"Github"}
                   />
                 </div>
-
-                  // <Link
-                  //   rel="stylesheet"
-                  //   href={`${github}`}
-                  //   target="_blank"
-                  //   aria-label="Open GitHub Repository"
-                  //   className={`mx-4 mb-2 rounded-full flex justify-center items-center text-center
-                  //   ${id % 2 === 0 ? '' : ''}`}>
-                  //     <i><SiGithub className="h-[35px] w-[35px]" /></i>
-                  // </Link>
                 ) : (
                   <div></div>
                 )
@@ -129,29 +102,6 @@ const ProjectCard = ({
                   stackName={"Website"}
                 />
                 </div>
-                  // <AnimatedButtons
-                  //   aria-label="Open Web Page"
-                  //   className="mx-4 mb-4 rounded-full flex justify-center items-center text-center"
-                  //   rel="stylesheet"
-                  //   href={`${website}`}
-                  //   target="_blank"
-                  //   color={"#D2D4D5"}
-                  //   offset={"0.5rem"}
-                  //   stiffness={1000}
-                  //   mass={1}
-                  //   children={
-                  //     <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
-                  //   }
-                  // />
-                  // <Link
-                  //   rel="stylesheet"
-                  //   href={`${website}`}
-                  //   target="_blank"
-                  //   aria-label="Open Web Page"
-                  //   className={`mx-4 mb-2 rounded-full flex justify-center items-center text-center
-                  //   ${id % 2 === 0 ? '' : ''}`}>
-                  //     <i><BsLink45Deg className="h-[35px] w-[35px]" /></i>
-                  // </Link>
                 ) :(
                   <div></div>
                 )
@@ -182,7 +132,6 @@ const ProjectCard = ({
                       {/* <p>{stackName[index]}</p> */}
 
                       <AnimatedTooltips
-                        // icon={Icon}
                         children={
                           <AnimatedIcons
                             key={index}
@@ -221,15 +170,11 @@ const ProjectCard = ({
             }`}
           />
         </div>
-        {/* <div className="z-10 absolute inset-0 w-full h-full pointer-events-none bg-gradient-to-t from-black to-transparent to-20%"/> */}
+
         <div className="grain rounded-[25px]">
           <Grain baseFrequency={"9"} numOctaves={5} w={"100%"} h={"100%"}/>
         </div>
-        {/* { id % 2 === 0 ? (
-          <div className="z-10 absolute inset-0 w-full h-full pointer-events-none bg-gradient-to-tl from-black from-10% via-transparent"/>
-         ) : (
-          <div className="z-10 absolute inset-0 w-full h-full pointer-events-none bg-gradient-to-tr from-black from-10% via-transparent"/>
-         ) } */}
+
       </div>
     )
 }
