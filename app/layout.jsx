@@ -14,7 +14,7 @@ export const metadata ={
 }
 const Rootlayout = ({children}) => {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth ">
       <body className={`${syne.className} no-scrollbar`}>
         <div>
           {children}

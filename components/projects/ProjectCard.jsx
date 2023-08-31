@@ -125,7 +125,7 @@ const ProjectCard = ({
                 {/* // <p className='mb-5 text-[16px] font-semibold w-[90%]'>{description}</p> */}
                 {/* <p className='mb-2 mx-4'>{stacks}</p> */}
                 <div className={`relative flex gap-4 mx-4 flex-wrap
-                ${id % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                ${id % 2 === 0 ? '' : 'flex-row-reverse'}`}>
                   {stackIcon.map((Icon, index) => (
                     <div className="relative  mb-5">
                       {/* <i><Icon tooltip={stackName[index]} className="text-white h-[25px] w-[25px]" /></i> */}

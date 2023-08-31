@@ -4,10 +4,23 @@ import Grain from "@components/utilities/Grain"
 import AnimatedButtons from '@components/animations/animatedButtons'
 
 const Navbar = () => {
+
+  // const handleScroll = () => {
+  //   e.preventDefault();
+  //   const href = e.currentTarget.href.split("#")[1];
+  //   window.scrollTo({
+  //       top: document.getElementById(href)?.offsetTop,
+  //       left: 0,
+  //       behavior: "smooth",
+  //   });
+  // };
+
   return (
+
     <div className="z-50 flex justify-center items-center fixed inset-x-0 bottom-0 w-fit mx-auto mb-5 rounded-lg bg-gradient-to-b from-[#D2D4D54d] via-transparent bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-[#D2D4D5]">
       <AnimatedButtons
         href={"#home"}
+        // onClick={handleScroll}
         target={""}
         color={"#D2D4D5"}
         offset={"-0.3rem"}
@@ -19,6 +32,7 @@ const Navbar = () => {
         />
       <AnimatedButtons
         href={"#about"}
+        // onClick={handleScroll}
         target={""}
         color={"#D2D4D5"}
         offset={"-0.3rem"}
@@ -30,6 +44,7 @@ const Navbar = () => {
         />
       <AnimatedButtons
         href={"#projects"}
+        // onClick={handleScroll}
         target={""}
         color={"#D2D4D5"}
         offset={"-0.3rem"}
@@ -41,6 +56,7 @@ const Navbar = () => {
         />
       <AnimatedButtons
         href={"#contact"}
+        // onClick={handleScroll}
         target={""}
         color={"#D2D4D5"}
         offset={"-0.3rem"}

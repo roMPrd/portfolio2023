@@ -28,7 +28,7 @@ import AnimatedTitles from "@components/animations/animatedTitles"
 
 const About = () => {
   return (
-    <div id="about" className="mx-auto my-10 h-[100vh] w-[90%] flex flex-col items-center justify-center">
+    <div id="about" className="sectionScroll mx-auto my-10 h-[100vh] w-[90%] flex flex-col items-center justify-center">
       <div className="w-full">
         <AnimatedTitles
           text={"CREATING APPS SINCE 2022"}

@@ -14,7 +14,7 @@ const Home = () => {
       {/* <HomeStart /> */}
       <Blur />
       <Navbar />
-      <div className=" flex flex-col items-center justify-center bg-black">
+      <div className="containerScroll bg-black">
         <HomePage />
         <About />
         <Projects />
