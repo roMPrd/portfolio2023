@@ -10,12 +10,12 @@ import {frontEnd, backEnd, others} from "@components/stacks/StackDetails"
 const TechsUsed = () => {
 
     return (
-      <div className="sectionScroll mx-auto my-10 h-[100vh] w-[80%] flex flex-col gap-10 items-start justify-center">
+      <div className="sectionScroll mx-auto my-10 min-h-[100vh] w-[80%] flex flex-col gap-10 items-start justify-start">
         <div className="text-center mx-auto">
           <AnimatedTitles
               text={"TOOLS IM USING."}
               className={
-                  "mb-10 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
+                  "mb-4  mt-4 text-left text-[40px] font-bold leading-[0.9em] tracking-tighter text-[#e4ded7] sm:text-[45px] md:mb-16 md:text-[60px] lg:text-[80px]"
               }
               wordSpace={"mr-[14px]"}
               charSpace={"mr-[0.001em]"}
@@ -30,7 +30,7 @@ const TechsUsed = () => {
           />
           <div className="relative flex gap-4 mr-4 flex-wrap">
             {frontEnd.stackIcon.map((Icon, index) => (
-              <div className="relative">
+              <div className="relative mb-6">
                 <AnimatedTooltips
                   children={
                     <AnimatedIcons
@@ -40,7 +40,7 @@ const TechsUsed = () => {
                       iconClassName={""}
                       delay={index * 0.25}
                       children={
-                        <Icon className="h-[50px] w-[50px]"/>
+                        <Icon className="h-[30px] w-[30px] md:h-[50px] md:w-[50px]"/>
                       }
                       />
                     }
@@ -63,7 +63,7 @@ const TechsUsed = () => {
           />
           <div className="relative flex gap-4 mr-4 flex-wrap">
             {backEnd.stackIcon.map((Icon, index) => (
-              <div className="relative">
+              <div className="relative mb-6">
                 <AnimatedTooltips
                   children={
                     <AnimatedIcons
@@ -73,7 +73,7 @@ const TechsUsed = () => {
                       iconClassName={""}
                       delay={index * 0.25}
                       children={
-                        <Icon className="h-[50px] w-[50px]"/>
+                        <Icon className="h-[30px] w-[30px] md:h-[50px] md:w-[50px]"/>
                       }
                     />
                   }
@@ -97,7 +97,7 @@ const TechsUsed = () => {
           />
           <div className="relative flex gap-4 mr-4 flex-wrap">
             {others.stackIcon.map((Icon, index) => (
-              <div className="relative">
+              <div className="relative mb-6">
                 <AnimatedTooltips
                   children={
                     <AnimatedIcons
@@ -107,7 +107,7 @@ const TechsUsed = () => {
                       iconClassName={""}
                       delay={index * 0.25}
                       children={
-                        <Icon className="h-[50px] w-[50px]"/>
+                        <Icon className="h-[30px] w-[30px] md:h-[50px] md:w-[50px]"/>
                       }
                     />
                   }

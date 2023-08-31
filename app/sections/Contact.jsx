@@ -12,7 +12,7 @@ const Contact = () => {
     <div id="contact" className="sectionScroll h-[100vh] w-full flex flex-col justify-center xl:justify-start items-center">
       <AnimatedTexts
         text={"CONTACT"}
-        className={`${spaceGrotesk.className} font-bold text-center text-[100px] sm:text-[100px] md:text-[150px] lg:mb-16 lg:text-[200px] xl:mb-0 xl:text-[300px] 2xl:text-[450px]`}
+        className={`${spaceGrotesk.className} font-bold text-center text-[95px] md:text-[150px] lg:mb-16 lg:text-[200px] xl:mb-0 xl:text-[300px] 2xl:text-[450px]`}
         delay={0}
       />
       {/* <p className={`${spaceGrotesk.className} font-bold text-center text-[100px] sm:text-[100px] md:mb-16 md:text-[150px] lg:mb-16 lg:text-[200px] xl:mb-0 xl:text-[450px]`}>

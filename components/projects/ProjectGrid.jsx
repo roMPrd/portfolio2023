@@ -4,7 +4,7 @@ import AnimatedTexts from '@components/animations/animatedTexts'
 
 const ProjectGrid = () => {
   return (
-    <div className="w-[80%] mx-auto flex flex-col gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
+    <div className="w-[90%] md:w-[80%] mx-auto flex flex-col gap-y-10 gap-x-6 lg:max-w-[1200px] lg:grid-cols-1">
 
       <AnimatedTexts
         text={ 'Check out some of my work !'}
