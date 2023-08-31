@@ -13,10 +13,10 @@
     color: #D2D4D5;
   }
 
-  .shadowTL {
+  .boxShadowTL {
     box-shadow: -7px -7px 20px 5px rgba(0,0,0,0.5);
   }
-  .shadowTR {
+  .boxShadowTR {
     box-shadow: 7px -7px 20px 5px rgba(0,0,0,0.5);
   }
 

@@ -21,7 +21,7 @@ const ProjectCard = ({
   }) => {
     return (
       // console.log(id),
-      <div className="projectScroll relative h-[550px] max-h-[100vh] mb-4 rounded-[25px] overflow-hidden">
+      <div className="projectScroll relative min-h-[550px] h-[550px] max-h-fit mb-4 rounded-[25px] overflow-hidden">
 
         <div style={{ background: "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)" }}
           className={`overflow-hidden relative w-full h-full border-2 rounded-[25px] border-[#ffffff3d] flex flex-col md:flex-row
@@ -160,7 +160,7 @@ const ProjectCard = ({
 
             <div
             // className="w-full flex justify-center md:w-[550px] md:m-w-[550px] md:l-[500px] md:m-l-[550px]"
-                  className={`flex justify-center md:w-[1000px] md:absolute md:top-[40%] lg:top-[30%]  w-full h-auto ${
+                  className={`flex rounded-[25px] justify-center md:w-[1000px] md:absolute md:top-[40%] lg:top-[30%]  w-full h-auto ${
                     id % 2 === 0 ? "md:boxShadowTL md:left-[45%]" : "md:boxShadowTR md:right-[45%]"
                 }`}>
               <img
@@ -169,7 +169,7 @@ const ProjectCard = ({
                 width={"100%"}
                 height={"100%"}
                 className={`opacity-80 rounded-[25px] w-full h-full ${
-                    id % 2 === 0 ? "md:boxShadowTL" : "md:boxShadowTR"
+                    id % 2 === 0 ? "" : ""
                 }`}
               />
             </div>
@@ -179,7 +179,7 @@ const ProjectCard = ({
         <div className="grain rounded-[25px]">
           <Grain baseFrequency={"9"} numOctaves={5} w={"100%"} h={"100%"}/>
         </div>
-
+                
       </div>
     )
 }
