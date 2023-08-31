@@ -22,10 +22,12 @@ const ProjectCard = ({
     return (
       // console.log(id),
       <div className="projectScroll relative h-[550px] max-h-[100vh] mb-4 rounded-[25px] overflow-hidden">
+
         <div style={{ background: "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)" }}
-          className={`overflow-hidden relative flex w-full h-full border-2 rounded-[25px] border-[#ffffff3d]
+          className={`overflow-hidden relative w-full h-full border-2 rounded-[25px] border-[#ffffff3d] flex flex-col md:flex-row
             ${id % 2 === 0 ? 'justify-start' : 'justify-end text-right'}`}>
-            <div className=" p-6 flex flex-col mt-4">
+
+            <div className=" p-6 flex flex-col mt-4 w-[100%] lg:w-[50%]">
               <div className={`flex items-center
                 ${id % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
               {github ? (
@@ -107,7 +109,7 @@ const ProjectCard = ({
                 )
               }
               </div>
-              <div>
+              <div className="pb-0 md:pb-[40px]">
 
                 <AnimatedTitles
                   text={name}
@@ -155,20 +157,23 @@ const ProjectCard = ({
                 </div>
               </div>
             </div>
-            {/* <div className="w-[50%] pr-4 flex flex-col justify-center items-center">
-              <img className='w-full opacity-50 border-2 rounded-[25px] border-[#ffffff3d]' src={`${image}`}></img>
-            </div> */}
-        </div>
-        <div>
-          <img
-            src={image}
-            alt={name}
-            width={500}
-            height={500}
-            className={`absolute bottom-[2px] w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] opacity-80 rounded-[25px] ${
-                id % 2 === 0 ? "right-[2px] boxShadowTL" : "left-[2px] boxShadowTR"
-            }`}
-          />
+
+            <div
+            // className="w-full flex justify-center md:w-[550px] md:m-w-[550px] md:l-[500px] md:m-l-[550px]"
+                  className={`flex justify-center md:w-[1000px] md:absolute md:top-[40%] lg:top-[30%]  w-full h-auto ${
+                    id % 2 === 0 ? "md:boxShadowTL md:left-[45%]" : "md:boxShadowTR md:right-[45%]"
+                }`}>
+              <img
+                src={image}
+                alt={name}
+                width={"100%"}
+                height={"100%"}
+                className={`opacity-80 rounded-[25px] w-full h-full ${
+                    id % 2 === 0 ? "md:boxShadowTL" : "md:boxShadowTR"
+                }`}
+              />
+            </div>
+
         </div>
 
         <div className="grain rounded-[25px]">
