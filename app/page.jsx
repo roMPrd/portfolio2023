@@ -6,6 +6,7 @@ import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Blur from '@components/utilities/Blur'
 import PreLoader from './sections/PreLoader'
+import TechsUsed from './sections/TechsUsed'
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
         <HomePage />
         <About />
         <Projects />
-        {/* <Tools /> // TODO */}
+        <TechsUsed />
         <Contact />
       </div>
     </>
