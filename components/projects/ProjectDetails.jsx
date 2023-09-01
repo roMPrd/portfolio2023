@@ -76,9 +76,9 @@ export const projects = [
     image: "Batch1030.jpeg",
     stackName: ["JS", "NodeJS", "Puppeteer"],
     stackIcon: [SiJavascript, SiNodedotjs, SiPuppeteer],
-    github: "https://github.com/roMPrd/RubyHunters",
+    github: "https://github.com/roMPrd/batch-1030",
     website: "https://romprd.github.io/batch-1030/",
-    color: "D2D4D5D2D4D5",
+    color: "D2D4D5",
   },
   {
     id: 0,
