@@ -11,6 +11,7 @@ const syne = Syne({
 export const metadata ={
   title: "Portofolio",
   description: "Portofolio 2023 of Romain DELIMAL",
+  
 }
 const Rootlayout = ({children}) => {
   return (
