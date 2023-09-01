@@ -21,7 +21,7 @@ const ProjectCard = ({
   }) => {
     return (
       // console.log(id),
-      <div className="projectScroll relative min-h-[550px] h-[550px] max-h-fit mb-4 rounded-[25px] overflow-hidden">
+      <div className="sectionScroll md:projectScroll relative min-h-[550px] h-[550px] max-h-fit mb-4 rounded-[25px] overflow-hidden">
 
         <div style={{ background: "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)" }}
           className={`overflow-hidden relative w-full h-full p-8 border-2 rounded-[25px] border-[#ffffff3d] flex flex-col md:flex-row

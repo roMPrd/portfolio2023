@@ -86,6 +86,7 @@
 
   .projectScroll {
     scroll-snap-align: center;
+    /* scroll-snap-align: start; */
   }
 
   .no-scrollbar {
