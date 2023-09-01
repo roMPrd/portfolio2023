@@ -44,14 +44,22 @@ const animatedTitles = (
   return (
     <p aria-label={props.text} className={props.className}>
       {`${props.text}`.split(" ").map((word, index) => {
+        // console.log('propsText-----')
+        // console.log(`${props.text}`.length)
+        // console.log(`${props.text}`)
+        // console.log('word-----')
+        // console.log(word.length-1)
+        // console.log(word)
+        // console.log('index------')
+        // console.log(index)
+        // console.log(index < word.length-1)
         return (
           <motion.span
             key={index}
             ref={ref}
             aria-label={props.text}
             role="heading"
-            className={`inline-block whitespace-nowrap ${props.wordSpace}`}
-            aria-hidden="true"
+            className={`inline-block whitespace-nowrap ${index < `${props.text}`.split(" ").length-1 ? `${props.wordSpace}` : '' }`}
             initial="hidden"
             animate={ctrls}
             variants={wordAnimation}
