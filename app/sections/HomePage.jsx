@@ -2,13 +2,13 @@ import AnimatedLogo from "@components/animations/animatedLogo"
 
 const HomePage = () => {
   return (
-    <div id="home" className="sectionScroll h-[100vh] w-[100%] flex justify-center items-center relative pointer-events-none">
+    <div id="home" className="sectionScroll h-[100vh] w-[100%] flex justify-center items-center relative">
       <div className="absolute inset-0">
         <video
           autoPlay="autoplay"
           muted="muted"
           loop="loop"
-          className="object-cover h-full w-full"
+          className="object-cover h-full w-full pointer-events-none"
           src="network_1080p.mp4"
           preload="auto">
         </video>
