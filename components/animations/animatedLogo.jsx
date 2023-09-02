@@ -45,7 +45,6 @@ const animatedLogo = (
       src={props.src}
       alt={props.alt}
     >
-      {/* {props.children} */}
     </motion.img>
   )
 }

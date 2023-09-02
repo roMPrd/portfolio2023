@@ -32,8 +32,6 @@ const animatedIcons = (
       x: 0,
       transition: {
         delay: props.delay,
-        // duration: 1,
-        // ease: [0.2, 0.65, 0.3, 0.9],
       },
     },
   };
@@ -46,13 +44,6 @@ const animatedIcons = (
       initial="hidden"
       animate={ctrls}
       variants={iconAnimation}
-      // transition={{
-      //   delay:`${props.delay}`,
-      // }}
-      // transition={{
-      //   delayChildren: index * 0.25,
-      //   staggerChildren: 0.05,
-      // }}
     >
       {props.children}
     </motion.div>

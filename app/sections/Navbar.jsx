@@ -1,5 +1,3 @@
-// "use client"
-// import Link from 'next/link';
 import Grain from "@components/utilities/Grain"
 import AnimatedButtons from '@components/animations/animatedButtons'
 
@@ -66,18 +64,6 @@ const Navbar = () => {
           <p className="p-2 m-1 font-bold text-[12px] md:text-[14px]">CONTACT</p>
         }
       />
-      {/* <Link href="#home">
-        <p className="p-2 m-1 font-bold text-[12px] md:text-[14px] border-[1px] border-transparent hover:border-[#D2D4D5]">HOME</p>
-      </Link>
-      <Link href="#about">
-        <p className="p-2 m-1 font-bold text-[12px] md:text-[14px] border-[1px] border-transparent hover:border-[#D2D4D5]">ABOUT</p>
-      </Link>
-      <Link href="#projects">
-        <p className="p-2 m-1 font-bold text-[12px] md:text-[14px] border-[1px] border-transparent hover:border-[#D2D4D5]">PROJECTS</p>
-      </Link>
-      <Link href="#contact">
-        <p className="p-2 m-1 font-bold text-[12px] md:text-[14px] border-[1px] border-transparent hover:border-[#D2D4D5]">CONTACT</p>
-      </Link> */}
       <div className="grain">
         <Grain baseFrequency={"9"} numOctaves={5} w={"100%"} h={"100%"}/>
       </div>

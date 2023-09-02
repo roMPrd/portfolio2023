@@ -1,4 +1,3 @@
-import HomeStart from './sections/HomeStart'
 import HomePage from './sections/HomePage'
 import Navbar from './sections/Navbar'
 import About from './sections/About'
@@ -12,7 +11,6 @@ const Home = () => {
   return (
     <>
       <PreLoader />
-      {/* <HomeStart /> */}
       <Blur />
       <Navbar />
       <div className="containerScroll bg-black">

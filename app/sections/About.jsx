@@ -1,30 +1,5 @@
-// "use client"
 import AnimatedTexts from "@components/animations/animatedTexts"
 import AnimatedTitles from "@components/animations/animatedTitles"
-// import AnimatedTextsTest from "@components/animations/animatedTextsTest";
-
-// import { useRef } from "react";
-// import { useInView } from "framer-motion";
-// // import "./styles.css";
-
-// function Section({ children }) {
-//   const ref = useRef(null);
-//   const isInView = useInView(ref, { once: false });
-
-//   return (
-//     <section ref={ref}>
-//       <span
-//         style={{
-//           transform: isInView ? "none" : "translateY(-200px)",
-//           opacity: isInView ? 1 : 0,
-//           transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
-//         }}
-//       >
-//         {children}
-//       </span>
-//     </section>
-//   );
-// }
 
 const About = () => {
   return (
@@ -53,10 +28,6 @@ const About = () => {
           className={"mb-4"}
           delay={0.2}
         />
-        {/* <AnimatedTextsTest /> */}
-        {/* <Section>
-          From RubyOnRails to React and Next.js, my passion lies in creating software that is both beautiful and functional.
-        </Section> */}
       </div>
     </div>
   )

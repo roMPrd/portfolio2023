@@ -3,7 +3,6 @@ import AnimatedTitles from "@components/animations/animatedTitles"
 import AnimatedButtons from "@components/animations/animatedButtons"
 import AnimatedTooltips from "@components/animations/animatedTooltips"
 import AnimatedIcons from "@components/animations/animatedIcons"
-import Link from 'next/link';
 import Grain from "@components/utilities/Grain"
 import { SiGithub } from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
@@ -20,7 +19,6 @@ const ProjectCard = ({
     color,
   }) => {
     return (
-      // console.log(id),
       <div className="sectionScroll md:projectScroll relative min-h-[550px] h-[550px] max-h-fit mb-4 rounded-[25px] overflow-hidden">
 
         <div style={{ background: "linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)" }}
@@ -118,21 +116,15 @@ const ProjectCard = ({
                   charSpace={"mr-[0.001em]"
                 }
                 />
-                {/* <p className='mb-5 text-[40px] font-bold'>{name}</p> */}
                 <AnimatedTexts
                   text={description}
                   className={"mb-4 text-[16px] font-semibold"}
                   delay={0}
                 />
-                {/* // <p className='mb-5 text-[16px] font-semibold w-[90%]'>{description}</p> */}
-                {/* <p className='mb-2 mx-4'>{stacks}</p> */}
                 <div className={`relative flex gap-4 flex-wrap
                 ${id % 2 === 0 ? '' : 'flex-row-reverse'}`}>
                   {stackIcon.map((Icon, index) => (
                     <div className="relative mb-5">
-                      {/* <i><Icon tooltip={stackName[index]} className="text-white h-[25px] w-[25px]" /></i> */}
-                      {/* <p>{stackName[index]}</p> */}
-
                       <AnimatedTooltips
                         children={
                           <AnimatedIcons
@@ -150,7 +142,6 @@ const ProjectCard = ({
                         divclassName={"h-[30px] w-[30px] relative"}
                         tooltipClassName={"absolute bottom-[-2rem] left-[50%] text-[12px] font-semibold text-white"}
                         stackName={stackName[index]}
-
                       />
                     </div>
                   ))}
@@ -159,7 +150,6 @@ const ProjectCard = ({
             </div>
 
             <div
-            // className="w-full flex justify-center md:w-[550px] md:m-w-[550px] md:l-[500px] md:m-l-[550px]"
                   className={`flex rounded-[13px] justify-center md:w-[1000px] md:absolute md:top-[40%] lg:top-[30%]  w-full h-auto ${
                     id % 2 === 0 ? "md:boxShadowTL md:left-[45%]" : "md:boxShadowTR md:right-[45%]"
                 }`}>

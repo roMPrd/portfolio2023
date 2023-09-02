@@ -4,24 +4,13 @@ import { useRef } from 'react';
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "framer-motion"
 
-// import { useEffect } from "react";
-// import { useInView } from "react-intersection-observer";
-
 const animatedTexts = (
-    // text,
-    // className,
-    // delay
     props
   ) => {
-    // const textarea = useRef(null)
+
     const ref = useRef(null)
     const isInView = useInView(ref)
     const ctrls = useAnimation();
-
-    // const { ref, isInView } = useInView({
-    //   threshold: 0.1,
-    //   triggerOnce: false,
-    // });
 
     useEffect(() => {
       if (isInView) {
