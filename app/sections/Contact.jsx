@@ -26,7 +26,7 @@ const Contact = () => {
             delay={0}
           />
           {/* <p className="">Got a question, proposal, project, or want to work together on something?</p> */}
-          <motion.button
+          <motion.a
             href="mailto:rom.delimal@gmail.com"
             target="_blank"
             whileHover={{ outlineColor: '#D2D4D5',
@@ -45,7 +45,7 @@ const Contact = () => {
               className={"mx-1 underline w-fit hover:no-underline"}
               delay={0}
             />
-          </motion.button>
+          </motion.a>
 
         // stopped working after changing 'button' to 'a' in animatedButtons.jsx
           {/* <AnimatedButtons
