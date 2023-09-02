@@ -2,8 +2,8 @@ import AnimatedLogo from "@components/animations/animatedLogo"
 
 const HomePage = () => {
   return (
-    <div id="home" className="sectionScroll h-[100vh] w-[100%] flex justify-center items-center relative">
-      <div className="absolute inset-0">
+    <div id="home" className="sectionScroll h-[100vh] w-[100%] flex justify-center items-center relative pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none">
         <video
           autoPlay="autoplay"
           muted="muted"
@@ -12,10 +12,10 @@ const HomePage = () => {
           src="network_1080p.mp4"
           preload="auto">
         </video>
-        <div className="z-5 absolute inset-0 w-full h-full bg-gradient-to-t from-black via-transparent"/>
+        <div className="z-5 absolute inset-0 w-full h-full bg-gradient-to-t from-black via-transparent pointer-events-none"/>
       </div>
       <AnimatedLogo
-        className={"z-10 h-20 absolute"}
+        className={"z-10 h-20 absolute pointer-events-none"}
         src={"Logo_RP_transparent.png"}
         alt={"logo"}
       />
