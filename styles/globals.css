@@ -66,14 +66,13 @@
     display: none;  /* Safari and Chrome */
   }
 
-  .sectionScroll {
+  /* .sectionScroll {
     scroll-snap-align: start;
-  }
+  } */
 
-  .projectScroll {
+  /* .projectScroll {
     scroll-snap-align: center;
-    /* scroll-snap-align: start; */
-  }
+  } */
 
   .no-scrollbar {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
